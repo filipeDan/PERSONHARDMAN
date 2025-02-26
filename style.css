@@ -1,0 +1,70 @@
+/* mais sobre view port */
+/* https://www.alura.com.br/artigos/guia-de-unidades-no-css */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+
+/* guia flex-box */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh; /* (vh) viewport, altura  */  
+    background-color: #000;
+    color: #fff;
+    box-sizing:border-box ;
+}
+.titulo-destaque{
+    color: #22D4FD;
+}
+.container{
+    display: flex; /* ela coloca uma do lado do outro, criou uma class container no HTML. */
+    align-items: center; /* alinhamento vertical */
+    justify-content: space-between;
+    gap: 0,5rem;
+    margin: 10%;
+}
+.container__conteudo{
+    width: 650px;
+
+}
+.container__conteudo__titulo{
+    font-size: 30px;
+    font-family: 'krone one', sans-serif;
+    word-spacing: 6%;
+    margin-bottom: 40px; 
+    letter-spacing: 2px;/* espaçamento entre palavras */
+    font-weight: 400;
+}
+.container__conteudo__texto{
+    font-size: 40px;
+    font-family: 'montserrat', sans-serif;
+    margin-top: 50px;
+    font
+
+    
+}
+.container__links{ /* botao */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.container__links__link{
+    background-color: #22D4FD;
+    width: 280px;/* ALTURA */
+    padding: 16px; /* ESPAÇAMENTO */
+    text-align: center;/* TEXTO */
+    font-size: 24px;/* cor do texto */
+    color: #000;
+    font-weight: 700;/* NEGRITO */
+    text-decoration: none; /* QUANDO TEM ( _ )  */
+    font-family:'montserrat', sans-serif;
+    border-radius: 16px ;
+    
+}
