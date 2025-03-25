@@ -294,10 +294,45 @@ i {
     color: var(--secondary-text-color);
 }
 
-/* **** Colaboradores **** atividade */
 
-.employees {
+
+/*  colaboradores */
+
+
+#team {
+    position: relative;
+    margin-bottom: 2rem;
+
+}
+
+.teams h2 {
+    font-size: 3rem;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;/* coloca o titulo na frente do quadrado cinza que esta atras */
+
+}
+ #team h2 span{
+    color: var(--main-color);
+ }
+ #team .square{
+    background-color: var(--tertiary-color);
+ }
+
+ #team .square{
+    background-color: var(--tertiary-color);
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+    top: -25px;
+ }
+
+ .employees {
     display: flex;
+    gap: 2rem;
 }
 
 /* *** Contato **** */
@@ -463,7 +498,7 @@ i {
     top: 0;
     left: 100%;
     height: 100%;
-    width: ;
+    width: 0;
     background-color: rgb(0,0,0,0.95);
     display: flex;
     flex-direction: column;
@@ -541,9 +576,6 @@ align-self: initial; /* mexeu somente com o botão e alongou ele */
 
 
 /* SOBRE NÓS */
-#about{
-
-
 }
 #about-text,
 #about-data{
@@ -618,7 +650,7 @@ padding:2rem ;
 }
 
 /* footer */
-#foorer {
+#footer {
     flex-wrap: wrap;
 }
 .contact-info,
@@ -646,5 +678,4 @@ padding:2rem ;
 
 .links-container h4{
     margin-bottom: 1.5rem;
-}
 }
